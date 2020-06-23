@@ -138,25 +138,24 @@ h3 {
 }
 
 .contacts .link:hover,
+.icon-phone:hover,
+.icon-mail:hover,
 .contacts .link:focus {
 	color: var(--text-color-hover);
+	--color3: var(--text-color-hover);
 }
 .icon-mail {
 	width: 16px;
 	height: 11px;
 	margin-right: 10px;
 }
-.icon-mail:hover {
-	fill: var(--text-color-hover);
-}
+
 .icon-phone {
 	width: 10px;
 	height: 15px;
 	margin-right: 10px;
 }
-.icon-phone:hover {
-	fill: var(--text-color-hover);
-}
+
 /* .contacts .link:before {
 	content: "";
 	width: 16px;
@@ -388,11 +387,13 @@ h3 {
 	height: 44px;
 	display: block;
 }
+
 .icon-social {
 	width: 44px;
 	height: 44px;
 }
-.icon-social:hover {
+.icon-social:hover,
+.icon-social:focus {
 	--color1: var(--text-color-hover);
 	--color2: var(--accent-color);
 }
