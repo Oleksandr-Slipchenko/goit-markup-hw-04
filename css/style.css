@@ -138,11 +138,11 @@ h3 {
 }
 
 .contacts .link:hover,
+.contacts .link:focus,
 .icon-phone:hover,
-.icon-mail:hover,
-.contacts .link:focus {
+.icon-mail:hover {
 	color: var(--text-color-hover);
-	--color3: var(--text-color-hover);
+	--color2: var(--text-color-hover);
 }
 .icon-mail {
 	width: 16px;
@@ -156,6 +156,9 @@ h3 {
 	margin-right: 10px;
 }
 
+.contacts .item + .item {
+	margin-left: 30px;
+}
 /* .contacts .link:before {
 	content: "";
 	width: 16px;
@@ -171,10 +174,6 @@ h3 {
 	height: 15px;
 	background-image: url(../images/header/phone.svg);
 } */
-
-.contacts .item + .item {
-	margin-left: 30px;
-}
 
 /* main */
 
@@ -383,19 +382,22 @@ h3 {
 }
 
 .social-item .link {
+	display: block;
 	width: 44px;
 	height: 44px;
-	display: block;
+	border-radius: 50%;
+}
+.icon-social {
+	width: 20px;
+	height: 20px;
 }
 
-.icon-social {
-	width: 44px;
-	height: 44px;
-}
+.social-item .link:hover,
+.social-item .link:focus,
 .icon-social:hover,
 .icon-social:focus {
-	--color1: var(--text-color-hover);
-	--color2: var(--accent-color);
+	background-color: var(--text-color-hover);
+	--color1: var(--accent-color);
 }
 
 /* customers */
@@ -437,11 +439,11 @@ h3 {
 	border-radius: 4px;
 }
 
-.yaco {
+/* .yaco {
 	width: 44px;
 	height: 50px;
-}
-.tagline {
+} */
+/* .tagline {
 	width: 40px;
 	height: 52px;
 }
@@ -460,7 +462,7 @@ h3 {
 .tag-line {
 	width: 89px;
 	height: 46px;
-}
+} */
 
 /* footer */
 .footer {
@@ -542,17 +544,18 @@ h3 {
 	width: 44px;
 	height: 44px;
 	display: block;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
 }
 
-.icon-social-footer {
-	width: 44px;
-	height: 44px;
-	--color1: rgba(255, 255, 255, 0.1);
-	--color2: #ffffff;
+.join-in .link:hover,
+.join-in .link:focus {
+	background-color: var(--text-color-hover);
 }
-.icon-social-footer:hover {
-	--color1: var(--text-color-hover);
-	--color2: var(--accent-color);
+.icon-social-footer {
+	width: 20px;
+	height: 20px;
+	--color1: var(--accent-color);
 }
 
 /* subscribe */
@@ -580,8 +583,6 @@ h3 {
 	line-height: 1.25;
 
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	/* box-sizing: border-box; */
-	/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 	border-radius: 4px;
 
 	color: rgba(255, 255, 255, 0.6);
