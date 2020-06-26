@@ -62,7 +62,6 @@ h3 {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-
 	width: 1200px;
 }
 
@@ -246,6 +245,9 @@ h3 {
 }
 
 .specialization .item {
+	position: relative;
+	display: block;
+	justify-content: center;
 	width: calc((100% - 30px) / 3);
 	margin-right: 30px;
 }
@@ -262,8 +264,10 @@ h3 {
 	text-align: center;
 }
 .specialization-text {
-	padding-top: 27px;
-	padding-bottom: 27px;
+	position: absolute;
+	bottom: 0px;
+	padding: 27px 0px;
+	width: 370px;
 
 	font-weight: 700;
 	font-size: 14px;
