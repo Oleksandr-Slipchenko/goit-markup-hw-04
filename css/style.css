@@ -347,20 +347,12 @@ h3 {
 	display: flex;
 	width: 44px;
 	height: 44px;
-}
-
-.icon-social {
-	display: flex;
-	width: 100%;
-	height: 100%;
 	align-items: center;
 	justify-content: center;
 }
 
 .social-item .link:hover,
-.social-item .link:focus,
-.icon-social:hover,
-.icon-social:focus {
+.social-item .link:focus {
 	background-color: var(--text-color-hover);
 	--color1: var(--accent-color);
 	border-radius: 50%;
@@ -396,24 +388,19 @@ h3 {
 }
 
 .customers .link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 170px;
 	height: 90px;
-	display: block;
-	vertical-align: bottom;
+
 	border: 1px solid #afb1b8;
 	box-sizing: border-box;
 	border-radius: 4px;
 }
-.icon-customers {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-}
+
 .customers .link:hover,
-.customers .link:focus,
-.icon-customers:hover {
+.customers .link:focus {
 	border-color: var(--text-color-hover);
 	--color1: var(--text-color-hover);
 }
@@ -495,25 +482,20 @@ h3 {
 	margin-right: 0px;
 }
 .join-in .link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
-	display: block;
+
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
+	--color1: var(--accent-color);
 }
 
 .join-in .link:hover,
 .join-in .link:focus {
 	background-color: var(--text-color-hover);
-}
-
-.icon-social-footer {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-	--color1: var(--accent-color);
 }
 
 /* subscribe */
