@@ -191,6 +191,8 @@ h3 {
 	text-decoration: none;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+	border: none;
+	cursor: pointer;
 }
 /* section with features of the company */
 
@@ -591,7 +593,9 @@ h3 {
 	font-size: 16px;
 	line-height: 1.62;
 	background: #f5f4fa;
+	border: none;
 	border-radius: 4px;
+	cursor: pointer;
 }
 .button-filter:hover,
 .button-filter:focus {
